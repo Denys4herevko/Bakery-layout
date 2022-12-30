@@ -1,0 +1,41 @@
+.container{
+    max-width: none;
+}
+ul.header-navigation {
+    margin: 0;
+    padding: 0;
+    }
+    ul.header-navigation li {
+    display: inline;
+    margin-right: 4px;
+    padding: 2px;
+    }
+    .header-navigation{
+        list-style: none;
+
+    }
+    .header-item{
+        text-decoration: none;
+        color: black;
+    }
+    @media(max-width:1200px){
+        .container{
+            max-width: 970px;
+        }
+    }
+    @media(max-width:992px){
+        .container{
+            max-width: 750px;
+        }
+    }
+    @media(max-width:768px){
+        .container{
+            max-width: none;
+        }
+    }
+    
+  
+ 
+    
+    
+  
