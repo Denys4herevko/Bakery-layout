@@ -1,7 +1,6 @@
 *{
     padding: 0px;
     margin: 0;
-    font-family: sans-serif;
 }
 html,body{
     height: 100%;
@@ -15,14 +14,17 @@ a{
     position: fixed;
     width: 100%;
 
+
     &-body{
         position: relative;
         display: flex;
         align-items: center;
         height: 70px;
+    
         li{
             list-style: none;
             margin-right: 15px;
+           
         }
     }
 }
@@ -50,6 +52,7 @@ a{
         display: block;
         background: transparent;
         border: transparent;
+        z-index: 1000;
 
         span {
             display: block;
@@ -72,12 +75,13 @@ a{
         left: -100%;
         top: 0;
         background:#009eda;
-        transition: left0.5s;
+        // transition: left 0.5s;
         }
-        &-ist{
+        &-list{
             display: block;
             padding-left:15px ;
             padding-top: 70px;
+            
             li{
                 margin-bottom: 15px;
 

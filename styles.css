@@ -13,6 +13,7 @@ a {
   height: 70px;
 }
 .header li {
+  float: left;
   list-style: none;
   margin-right: 15px;
 }
