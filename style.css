@@ -13,6 +13,9 @@
   margin-right: 15px;
   float: left;
 }
+.header-body li a {
+  color: grey;
+}
 .header:hover {
   color: #B47B48;
 }
@@ -35,50 +38,40 @@
 
 @media (max-width: 480px) {
   .header-hamburger {
-    width: 32px;
-    height: 32px;
-    display: block;
-    background: transparent;
-    border: transparent;
+    width: 60px;
+    height: 60px;
+    background: url(./img/menu_burger_icon_177188.svg);
     z-index: 1000;
-  }
-  .header-hamburger span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #666666;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1882352941);
-  }
-  .header-hamburger span + span {
-    margin-top: 7px;
+    cursor: pointer;
+    background-size: contain;
   }
   .header-menu {
-    position: fixed;
-    height: 100%;
+    position: absolute;
+    height: 100vh;
     width: 100%;
     left: -100%;
     top: 0;
-    background: #C85312;
+    background-image: url(./img/bakery-background-bread-assortment-on-2410448.jpg);
     transition: left 0.7s;
+    margin-left: -30px;
   }
   .header-list {
     display: block;
-    padding-left: 15px;
+    padding-left: 30px;
     padding-top: 70px;
-  }
-  .header-list li {
-    margin-bottom: 15px;
-  }
-  .header-list li a:hover {
-    color: black;
+    margin-left: 1000px;
   }
   .active .header-menu {
     left: 0px;
   }
   .active .header-link {
-    padding-left: 50px;
-    font-size: 70px;
+    font-size: 60px;
     height: 100%;
+  }
+  .burger-active {
+    background: url(./img/hb_close.svg);
+    background-size: contain;
+    height: 50px;
+    width: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
